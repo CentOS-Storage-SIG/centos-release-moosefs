@@ -1,0 +1,20 @@
+# CentOS-MooseFS-3.repo
+#
+# Please see http://wiki.centos.org/SpecialInterestGroup/Storage for more
+# information
+
+[centos-moosefs3]
+name=CentOS-$releasever - MooseFS 3
+mirrorlist=http://mirrorlist.centos.org?arch=$basearch&release=$releasever&repo=storage-moosefs-3
+#baseurl=http://mirror.centos.org/$contentdir/$releasever/storage/$basearch/moosefs-3/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
+
+[centos-moosefs3-test]
+name=CentOS-$releasever - MooseFS 3 Testing
+baseurl=http://buildlogs.centos.org/centos/$releasever/storage/$basearch/moosefs-3/
+gpgcheck=0
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
+
